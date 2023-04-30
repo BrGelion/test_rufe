@@ -98,7 +98,7 @@ class TestWin(QWidget):
 
 
     def initUI(self):
-       ''' создаёт графические элементы '''
+       #''' создаёт графические элементы '''
         self.btn_next = QPushButton(txt_sendresults, self)
         self.btn_test1 = QPushButton(txt_starttest1, self)
         self.btn_test2 = QPushButton(txt_starttest2, self)
@@ -160,7 +160,7 @@ class TestWin(QWidget):
 
 
     def timer_sits(self):
-       global time
+        global time
         time = QTime(0, 0, 30)
         self.timer = QTimer()
         self.timer.timeout.connect(self.timer2Event)
